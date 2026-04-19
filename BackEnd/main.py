@@ -35,3 +35,4 @@ async def chat_stream(request: ChatRequest):
             yield f"data: {json.dumps({'type': 'error', 'content': str(e)})}\n\n"
 
     return StreamingResponse(generate(), media_type="text/event-stream")
+# sasd
